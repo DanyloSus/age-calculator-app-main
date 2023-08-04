@@ -7,3 +7,36 @@
 :root {
   font-family: "Poppins", sans-serif;
 }
+
+@layer components {
+  input {
+    @apply px-5 py-2 border-light-grey border rounded-xl font-extrabold text-3xl w-[158px];
+  }
+  h2 {
+    @apply font-bold tracking-[4px] text-smokey-grey text-xs;
+  }
+  h1 {
+    @apply font-[800] text-[100px] italic tracking-tighter;
+  }
+  hr {
+    @apply border-light-grey;
+  }
+  button {
+    @apply rounded-full bg-purple p-5;
+
+    img {
+      @apply w-[60px];
+    }
+  }
+  section > div {
+    @apply -mb-[32px];
+  }
+  header {
+    div {
+      @apply transition-colors ease-in-out duration-500 relative;
+      span {
+        @apply absolute left-0 -bottom-6 italic whitespace-nowrap transition-opacity text-sm;
+      }
+    }
+  }
+}

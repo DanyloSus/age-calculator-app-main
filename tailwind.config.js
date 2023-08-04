@@ -13,6 +13,9 @@ export default {
         "smokey-grey": "hsl(0, 1%, 44%)",
         "off-black": "hsl(0, 0%, 8%)",
       },
+      spacing: {
+        button: "calc(100% + 160px)",
+      },
     },
   },
   plugins: [],
