@@ -8,13 +8,13 @@
 
 @layer components {
   input {
-    @apply px-5 py-2 border-light-grey border rounded-xl font-extrabold text-3xl w-[158px];
+    @apply px-5 py-2 border-light-grey border rounded-lg font-extrabold text-3xl w-[158px] md:w-[88px] md:text-xl md:py-3 md:px-4;
   }
   h2 {
     @apply font-bold tracking-[4px] text-smokey-grey text-xs;
   }
   h1 {
-    @apply font-[800] text-[100px] italic tracking-tighter;
+    @apply font-[800] text-[100px] md:text-[56px] italic tracking-tighter;
   }
   hr {
     @apply border-light-grey;
@@ -26,12 +26,28 @@
     @apply w-[60px];
   }
   section > div {
-    @apply -mb-[32px];
+    @apply -mb-[32px] md:-mb-[28px];
   }
   header div {
     @apply transition-colors ease-in-out duration-500 relative;
   }
   header div span {
-    @apply absolute left-0 -bottom-6 italic whitespace-nowrap transition-opacity text-sm;
+    @apply absolute left-0 -bottom-6 italic whitespace-nowrap transition-opacity text-sm md:text-xs md:whitespace-normal md:-bottom-8;
+  }
+}
+.anim-left {
+  animation: anim-left 1.5s ease-in-out 0.75s both;
+}
+
+@keyframes anim-left {
+  0% {
+    position: relative;
+    left: -50px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
   }
 }/*# sourceMappingURL=index.css.map */

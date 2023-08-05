@@ -108,7 +108,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex gap-8 relative w-full">
+    <header className="flex gap-8 md:gap-4 relative w-full">
       <div id="days" className="">
         <h2>DAY</h2>
         <input
@@ -145,11 +145,12 @@ const Header = () => {
         />
         <span className="opacity-0">Error</span>
       </div>
-      <div className="absolute -bottom-[100px] flex w-button z-10 items-center">
+      <div className="absolute -bottom-[100px] flex w-button z-10 items-center md:w-full">
         <hr className="w-full" />
         <button onClick={checkDates}>
           <img src="./icon-arrow.svg" alt="icon arrow" />
         </button>
+        <hr className="hidden w-full md:block" />
       </div>
     </header>
   );

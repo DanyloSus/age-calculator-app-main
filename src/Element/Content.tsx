@@ -1,6 +1,6 @@
 const Content = () => {
   return (
-    <section className="flex flex-col mt-[64px]">
+    <section className="flex flex-col mt-[64px] md:mt-[128px]">
       <div>
         <h1>
           <span className="text-purple" id="numYears">

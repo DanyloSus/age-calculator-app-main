@@ -16,6 +16,7 @@ export default {
       spacing: {
         button: "calc(100% + 160px)",
       },
+      screens: { md: { max: "768px" } },
     },
   },
   plugins: [],
